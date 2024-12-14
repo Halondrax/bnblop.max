@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" class="preloader--page">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link rel="shortcut icon" href="https://bnbgain.live/assets/themes/avenex/assets/ex/images/favicon.ico">
+    <link rel="stylesheet" href="https://bnbgain.live/assets/themes/avenex/assets/ex/css/style.min.css?v=6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>BNB - EARN FRRE BNB</title>
+    <meta name="description" content="🌍 Start Mining BNB Today. sign up and get Free GH/s 🚀">
+    <meta name="keywords" content="🎉 Earn Free BNB Mining">
+    <meta name="author" content="Script by hyipco.com">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND84V5D813"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ND84V5D813');
+    </script>
+
+
+    <style type="text/css">
+        .preloader--page {
+            overflow: hidden;
+        }
+
+        .preloader--page .wrapper {
+            opacity: 0;
+        }
+
+        #preloader {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #090909;
+            padding: 16px;
+            transition: all 0.3s ease-out;
+        }
+
+        #preloader:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: calc(100% - 16px);
+            height: calc(100% - 16px);
+            border: 2px solid rgba(var(--white-rgb), 0.1);
+            z-index: -1;
+        }
+
+        .pre-content {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: relative;
+            max-width: 1232px;
+            width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+
+        .pre-content .block {
+            display: flex;
+            flex-direction: column;
+            gap: 40px
+        }
+
+        .pre-content .logo {
+            max-width: 140px;
+        }
+
+        .pre-content .loading {
+            display: block;
+            font-family: 'ConthraxSb', sans-serif;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            clip-path: inset(0 2ch 0 0);
+            animation: l 2s steps(4) infinite;
+        }
+
+        .pre-content .percentage .data {
+            display: block;
+            font-family: 'ConthraxSb', sans-serif;
+            font-size: 55px;
+            line-height: 1;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: -20px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .pre-content .percentage .data {
+                font-size: 24px;
+                margin: 0;
+            }
+        }
+
+        .pre-progress {
+            position: absolute;
+            left: 50%;
+            top: 42px;
+            width: 100vw;
+            height: 3px;
+            background-color: #000000;
+            transform: translateX(-50%);
+        }
+
+        .pre-progress .progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(135deg, var(--orange-1) 0%, var(--red-1) 100%);
+            transition: 1s;
+        }
+
+        .pre-progress .progress.active {
+            width: 100%;
+        }
+
+        .preloader-hide {
+            opacity: 0;
+            z-index: -1;
+        }
+
+        @keyframes l {
+            to {
+                clip-path: inset(0 -1ch 0 0)
+            }
+        }
+
+        .nav-link i {
+            margin-right: 5px;
+            /* Adds space between the icon and the text */
+        }
+    </style>
+
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById("preloader");
+            var page = document.querySelector("html");
+            var progress = document.getElementById("progress");
+
+            progress.classList.add('active');
+
+            setTimeout(function() {
+                preloader.classList.add('preloader-hide');
+                page.classList.remove('preloader--page');
+            }, 1000);
+
+            setTimeout(function() {
+                document.querySelector(".preloader-hide").remove();
+            }, 2000);
+        });
+    </script>
+</head>
+
+<body class="body">
+
+    <header id="header" class="header">
+        <div class="header-decor"></div>
+
+        <div class="header_content">
+            <div class="burger">
+                <button type="button" class="btn-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+
+            <div class="logo-block">
+                <a href="https://bnbgain.live/" class="logo">
+        <img src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/yld1.png" alt="logo">
+      </a>
+                <span class="logo-text"><i class="fas fa-coins"></i> Your Personal BNB Miner</span>
+            </div>
+
+            <div class="nav-block">
+                <div class="lang-wrap">
+                    <a href="#ModalLang" class="btn-lang modal_w" type="button">
+          <span>EN</span>
+          <i class="flag gbr"></i>
+        </a>
+                </div>
+
+                <nav class="nav">
+                    <a href="https://bnbgain.live/" class="nav-link active">
+    <i class="fa fa-home"></i> Home
+</a>
+                    <a href="https://bnbgain.live/payouts" class="nav-link">
+    <i class="fa fa-money-bill-wave"></i> Payouts
+</a>
+                    <a href="https://bnbgain.live/affiliate" class="nav-link">
+    <i class="fa fa-gift"></i> 100K$ Bounty
+</a>
+                    <a href="https://bnbgain.live/faq" class="nav-link">
+    <i class="fa fa-info-circle"></i> ABOUT
+</a>
+                    <a href="https://bnbgain.live/contact" class="nav-link">
+    <i class="fa fa-envelope"></i> Contacts
+</a>
+
+
+                    <div class="list-soc">
+
+
+                    </div>
+                </nav>
+            </div>
+
+            <div class="button-block">
+                <div class="lang-wrap">
+                    <a href="#ModalLang" class="btn-lang modal_w" type="button">
+          <span>EN</span>
+          <i class="flag gbr"></i>
+        </a>
+                </div>
+
+
+                <a href="https://bnbgain.live/" class="base-cta outline-cta-light"><span>Sign In</span></a>
+                <a href="https://bnbgain.live/" class="base-cta filled-cta shadow-cta"><span>Sign Up</span></a>
+
+
+
+
+            </div>
+
+            <div class="button-mob">
+                <a href="/" class="auth-mob"><i class="icon-login"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="content">
+            <section class="main-sc">
+                <div class="container">
+                    <div class="block">
+                        <div class="head-row">
+                            <h5 class="title">
+                                Reliable Mining Solution</h5>
+                            <BR>
+                            <p class="sub-title">
+                                💰 <u>Earn with BNB Miner!</u>
+                                <BR> Invest, relax, and watch your profits grow automatically.
+                                <BR> Let our mining algorithms work for you!</p>
+                        </div>
+
+                        <BR>
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1" style="margin-top:5px;">
+                                <form action="" method="post" class="form-inline">
+                                    <input type="hidden" name="reference_user_id" id='reference_user_id' value="20477">
+                                    <input type="text" style="margin-top:4px;padding:8px 80px; border:2px solid #fb9115; 
+              border-radius:12px; background-clip: padding-box;
+              background: rgba(255, 255, 255, 0.1); /* Transparent background */
+              box-shadow: 0 0 0 2px linear-gradient(45deg, #f3333e, #fb9115);" id="username" minlength="20" maxlength="50" pattern="[a-zA-Z0-9_-]+" name="username" placeholder="Enter Your BNB.BSC Address" class="form-control">
+
+                                    <input type="password" style="margin-top:4px;padding:8px 80px; border:2px solid #fb9115; 
+              border-radius:12px; background-clip: padding-box;
+              background: rgba(255, 255, 255, 0.1); /* Transparent background */
+              box-shadow: 0 0 0 2px linear-gradient(45deg, #f3333e, #fb9115);" id="password" minlength="4" name="password" placeholder="Enter Your Password" class="form-control">
+
+                                    <div class="cta-row">
+                                        <button class="base-cta filled-cta shadow-cta" id="go_enter" onclick="return validateFormLogin();">
+        <i class="fas fa-play-circle"></i> <span>Start mining</span>
+    </button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                            <br>
+
+                        </div>
+
+                        <!--            <div class="cta-row">-->
+                        <!--                <a href="index.php?a=signup" class="base-cta filled-cta shadow-cta">-->
+                        <!--  <span>Create an account</span>-->
+                        <!--</a>-->
+                        <!--            </div>-->
+                    </div>
+                </div>
+
+                <div class="video-bg">
+                    <video class="video" playsinline autoplay muted loop poster="https://bnbgain.live/assets/themes/avenex/images/media/main-bg.png">
+          <source src="https://bnbgain.live/assets/themes/avenex/assets/ex/static/video/main-video.mp4" type="video/mp4">
+        </video>
+                </div>
+            </section>
+
+            <section class="full-sc security-sc">
+                <div class="container">
+                    <div class="head-sc">
+                        <h2 class="title">SECURE<br> INVESTMENTS</h2>
+                        <h3 class="sub-title">IN BRIGHT FUTURE</h3>
+                    </div>
+
+                    <div class="rows">
+                        <div class="def-decor block">
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/icons/cpu.png" width="44" height="44" alt="media">
+                            </picture>
+                            <h3 class="title">🌐 Start Your Cloud Mining Journey Now 🌐</h3>
+                            <p class="text">Ready to embark on your cloud mining journey? Visit our website today and explore the various cloud mining packages we offer. Whether you're a beginner or an experienced miner, Bnb Miner Cloud Mining has the perfect solution
+                                for you. Get started now and unlock the potential of profitable mining!</p>
+                            <div class="decor-el"></div>
+                        </div>
+
+                        <div class="def-decor block">
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/icons/exchange.png" width="44" height="44" alt="media">
+                            </picture>
+                            <h3 class="title">Own nodes and crypto gateways</h3>
+                            <p class="text">We offer you an incredible opportunity to maximize your profits and join the world of cryptocurrency mining with ease.</p>
+                            <div class="decor-el"></div>
+                        </div>
+
+                        <div class="def-decor block">
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/icons/bot.png" width="44" height="44" alt="media">
+                            </picture>
+                            <h3 class="title">
+                                Discover the Power of Cloud BNB Mining</h3>
+                            <p class="text">At Bnb Miner, we believe in the power of unlimited earning potential. By investing in our cloud mining services, you can tap into a world of endless opportunities. Sit back, relax, and watch your earnings grow as our advanced
+                                mining algorithms work tirelessly to generate profits for you.</p>
+                            <div class="decor-el"></div>
+                        </div>
+                    </div>
+
+                    <div class="footnote">
+                        <p class="text">Find out how the BNB YLD platform allows you to earn stable profits every day</p>
+                    </div>
+
+                    <div class="lower">
+                        <div class="cta-row">
+                            <a href="https://bnbgain.live/faq" class="base-cta filled-cta shadow-cta"><span>Learn more about the BNB YLD</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="video-bg">
+                        <video class="video" playsinline autoplay muted loop poster="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/security-bg.png">
+            <source src="https://bnbgain.live/assets/themes/avenex/assets/ex/static/video/security-video.mp4" type="video/mp4">
+          </video>
+                    </div>
+                </div>
+            </section>
+
+            <section class="full-sc reactor-sc">
+                <div class="container">
+                    <div class="desc-sc">
+                        <div class="head-sc">
+                            <h2 class="title">your crypto never sleeps</h2>
+                            <h3 class="sub-title">The profit reactor is running 24/7</h3>
+                        </div>
+
+                        <div class="desc-ctn">
+                            <p class="text">Artificial intelligence does not need rest, so your BNB YLD works around the clock! And brings stable and high income for you every day. </p>
+                        </div>
+
+                        <div class="cta-row">
+                            <a href="https://bnbgain.live/payouts" class="base-cta filled-cta shadow-cta"><span>For Payouts</span></a>
+                        </div>
+                    </div>
+
+                    <div class="video-block">
+                        <video class="video" playsinline autoplay muted loop poster="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/reactor-media.png">
+            <source src="https://bnbgain.live/assets/themes/avenex/assets/ex/static/video/reactor-video.mp4" type="video/mp4">
+          </video>
+                    </div>
+                </div>
+
+                <div class="container no-flex">
+                    <div class="lower">
+                        <div class="up-row">
+
+                            <div class="block">
+                                <div class="count-wrap">
+                                    <span class="num">BNB</span>
+                                    <span class="num counter-one">100000+</span>
+                                </div>
+                                <span class="num transparent">100000+BNB</span>
+                            </div>
+
+                            <div class="block">
+                                <p class="text">already invested in the BNB YLD platform</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="full-sc partners-sc">
+                <div class="container">
+                    <div class="upper">
+
+                        <div class="number">
+                            <span class="data counter-two" data-number="179">179</span>
+                            <span class="data transparent">179</span>
+                        </div>
+
+                        <div class="block">
+                            <h2 class="title">Partners<br> around the world</h2>
+                        </div>
+                    </div>
+
+                    <div class="rows">
+                        <div class="desc-sc">
+                            <div class="head-sc">
+                                <h3 class="sub-title">Already making money with BNB YLD</h3>
+                            </div>
+
+                            <div class="desc-ctn">
+                                <p class="text">Find out how our partners earn hundreds of thousands of dollars with the BNB YLD affiliate program</p>
+                            </div>
+
+                            <div class="cta-row">
+                                <a href="https://bnbgain.live/affiliate" class="base-cta filled-cta shadow-cta"><span>For Partners</span></a>
+                            </div>
+
+
+
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/planet.png" width="835" height="608" alt="preview">
+                            </picture>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <section class="full-sc start-sc">
+                <div class="container">
+                    <div class="head-sc">
+                        <h2 class="title">Start your journey<br> with BNB YLD</h2>
+                        <h3 class="sub-title">in 3 easy steps</h3>
+                    </div>
+
+                    <div class="rows">
+                        <div class="def-decor block">
+                            <div class="step">
+                                <span class="data">01</span>
+                            </div>
+                            <h3 class="title">create a free account</h3>
+                            <p class="text">Creating an account with BNB YLD will not take you more than 1 minutes of your time</p>
+                            <div class="decor-el"></div>
+                        </div>
+
+                        <div class="def-decor block">
+                            <div class="step">
+                                <span class="data">02</span>
+                            </div>
+                            <h3 class="title">charge your crypto reactor in a convenient way</h3>
+                            <p class="text">Create a new deposit with BNB YLD in any way convenient for you</p>
+                            <div class="decor-el"></div>
+                        </div>
+
+                        <div class="def-decor block">
+                            <div class="step">
+                                <span class="data">03</span>
+                            </div>
+                            <h3 class="title">Start receiving stable daily profit</h3>
+                            <p class="text">Income on your deposit will start accruing from the first minute of its creation</p>
+                            <div class="decor-el"></div>
+                        </div>
+
+                        <picture class="media-bg">
+                            <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/rocket-bg.png" alt="preview">
+                        </picture>
+                    </div>
+
+                    <div class="pay-rows">
+                        <div class="block">
+                            <p class="title">charge your crypto reactor WITH:</p>
+                        </div>
+
+
+
+                        <div class="box">
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/payments/bnb.png" width="32" height="32" alt="preview">
+                            </picture>
+
+                            <div class="desc">
+                                <span class="name"></span>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="cta-rows">
+                    <a onclick="location.href='#top';" style="cursor:pointer" class="base-cta filled-cta shadow-cta"><span>Create an account</span></a>
+                </div>
+                </div>
+            </section>
+
+            <section class="full-sc news-sc">
+                <div class="container">
+                    <!--<div class="head-row">-->
+                    <!--    <h2 class="title">latest platform news</h2>-->
+                    <!--    <a href="#" class="base-cta filled-cta shadow-cta"><span>All News and Updates</span></a>-->
+                    <!--</div>-->
+                    <center>
+                        <div class="modal fade" id="fogotPassword" tabindex="-1" role="dialog" aria-labelledby="fogotPassword">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <h4 class="modal-title">Forgot Password</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="forgotPassResult"></div>
+                                        <form id="forgotPass">
+                                            <div class="form-group">
+                                                <label for="email">Username</label>
+                                                <input type="text" style="margin-top:4px;margin-bottom:4px;padding:8px 10px; border:2px solid #fb9115; 
+              border-radius:12px; background-clip: padding-box;
+              background: rgba(255, 255, 255, 0.1); /* Transparent background */
+              box-shadow: 0 0 0 2px linear-gradient(45deg, #f3333e, #fb9115);" name="identity" id="identity" class="form-control" placeholder="Your username" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="base-cta outline-cta-light" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="base-cta filled-cta shadow-cta" id="fpSend" onclick="return forgotPassword();"><span>Recover Password</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </section>
+
+            <section class="what-sc">
+                <div class="container">
+                    <div class="holder">
+                        <div class="video-block">
+                            <video class="video" playsinline autoplay muted loop poster="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/what-media.png">
+          <source src="https://bnbgain.live/assets/themes/avenex/assets/ex/static/video/usdt-video.mp4" type="video/mp4">
+        </video>
+                        </div>
+
+                        <div class="desc">
+                            <p class="up-title">what you waiting for?</p>
+                            <h2 class="title">Secure and Reliable <span> Mining Solution
+</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="cta-row">
+                        <a onclick="location.href='#top';" class="base-cta filled-cta shadow-cta"><span>Create an account</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-decor"></div>
+
+                <div class="footer_content">
+                    <div class="logo-block">
+                        <a href="https://bnbgain.live/" class="logo">
+                            <picture class="media">
+                                <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/yld1.png" alt="media">
+                            </picture>
+                        </a>
+                        <span class="logo-text">Your Personal BNB Miner</span>
+                    </div>
+
+                    <div class="footer-nav">
+                        <div class="col">
+                            <h3 class="title">MAIN MENU</h3>
+                            <div class="list">
+
+
+                                <!--<a href="https://bnbgain.live/payouts" class="nav-link">Payouts</a> </a>-->
+
+
+
+                                <a href="https://bnbgain.live/" class="nav-link">
+    <i class="fa fa-home"></i> Home
+</a>
+                                <a href="https://bnbgain.live/payouts" class="nav-link">
+    <i class="fa fa-money-bill-wave"></i> FOR PAYOUT
+</a>
+                                <a href="https://bnbgain.live/affiliate" class="nav-link">
+    <i class="fa fa-handshake"></i> FOR PARTNERS
+</a>
+                                <a href="https://bnbgain.live/faq" class="nav-link">
+    <i class="fa fa-info-circle"></i> About yld
+</a>
+                                <a href="https://bnbgain.live/contact" class="nav-link">
+    <i class="fa fa-comment-dots"></i> FEEDBACK
+</a>
+
+                            </div>
+                        </div>
+
+                        <!--   <div class="col">
+                            <h3 class="title">Legal documents</h3>
+                            <div class="list">
+                                <a href="#" class="nav-link">Privacy policy</a>
+                                <a href="#" class="nav-link">User agreement</a>
+                            </div>
+                        </div>-->
+
+                        <div class="col">
+                            <h3 class="title">Social Networks</h3>
+                            <div class="list-soc">
+                                <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+            <i class="icon-telegram"></i>
+            Telegram Channel
+          </a>
+                                <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+            <i class="icon-telegram"></i>
+            Telegram Chat
+          </a>
+                                <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+      <i class="icon-twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" style="display:block"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" /></svg></i>
+      Twitter
+    </a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-block">
+                        <div class="lang-wrap">
+                            <a href="#ModalLang" class="btn-lang modal_w" type="button">
+          <span>EN</span>
+          <i class="flag gbr"></i>
+        </a>
+                        </div>
+
+
+
+                        <a href="https://bnbgain.live/" class="base-cta outline-cta-light"><span>Sign In</span></a>
+                        <a href="https://bnbgain.live/" class="base-cta filled-cta shadow-cta"><span>Sign Up</span></a>
+
+
+                    </div>
+
+                    <div class="info-block">
+                        <span class="date">All rights reserved. © 2024</span>
+                    </div>
+
+                    <div class="media-footer">
+                        <picture class="media">
+                            <img loading="lazy" class="lazy-img" src="" data-src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/media/media-footer.png" alt="media">
+                        </picture>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!--Language-->
+    <div id="ModalLang" class="modal modal-lang" style="display: none;">
+        <button class="closed_m cross" type="button"></button>
+
+        <div class="scroll-wrap">
+            <div class="body_m">
+                <ul class="lang-list">
+                    <li class="item">
+                        <a href="index.php?language=en" class="lang-link active">
+            <span class="icon">
+              <i class="flag usa"></i>
+            </span>
+            <span class="name">English</span>
+          </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Language-->
+    <div class="an_bar soc-bar">
+        <div class="list-soc">
+            <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+      <i class="icon-telegram"></i>
+      Telegram Channel
+    </a>
+            <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+      <i class="icon-telegram"></i>
+      Telegram Chat
+    </a>
+            <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+      <i class="icon-twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" style="display:block"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" /></svg></i>
+      Twitter
+    </a>
+
+            <a href="https://t.me/+TPa9M4eDqk0xNjU1" class="soc-link">
+      <i class="icon-youtube-play"></i>
+      Youtube
+    </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/gsap.min.js" defer="defer"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/ScrollTrigger.min.js" defer="defer"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/ScrollSmoother.min.js" defer="defer"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/app.js" defer="defer"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/animation.js" defer="defer"></script>
+
+    <script src="https://bnbgain.live/assets/themes/avenex/assets/ex/js/lazy-media.js" defer="defer"></script>
+
+    <!-- HelloPreload -->
+    <div id="preloader">
+        <div class="pre-content">
+            <div class="block">
+                <img class="logo" src="https://bnbgain.live/assets/themes/avenex/assets/ex/images/yld1.png" alt="logo">
+                <span class="loading">Loading . . .</span>
+            </div>
+
+            <div class="pre-progress">
+                <div class="progress" id="progress"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- HelloPreload -->
+
+
+</body>
+
+</html>
+
+
+<!-- Forgot Password Modal -->
+
+
+
+<script src="https://bnbgain.live/assets/themes/avenex/js/jquery.min.js"></script>
+<script src="https://bnbgain.live/assets/themes/avenex/js/bootstrap.min.js"></script>
+<script src="https://bnbgain.live/assets/themes/avenex/js/global.js"></script>
+<script type="text/javascript">
+    function validateFormLogin() {
+        event.preventDefault();
+        let button = $('#go_enter');
+        let min_length = 20;
+        let max_length = 50;
+        let error_message = "";
+        let username_val = $("#username").val();
+        let username = username_val.length;
+        let password_val = $("#password").val();
+        let reference_user_id = $("#reference_user_id").val();
+        let password = password_val.length;
+
+        button.prop('disabled', true);
+        $("#result").html('Working...');
+
+        if (username > 0 && password > 0) {
+            if (username < min_length) {
+                error_message = "Wallet address is invalid! Enter correct wallet address or <b><a href='https://coinpayments.net' target='_blank'>Create New Wallet Address</a></b>.";
+                $("#result").html(error_message);
+                button.prop('disabled', false);
+                return false;
+            }
+            if (username > max_length) {
+                error_message = "Wallet address is invalid! Enter correct wallet address or <b><a href='https://coinpayments.net' target='_blank'>Create New Wallet Address</a></b>.";
+                $("#result").html(error_message);
+                button.prop('disabled', false);
+                return false;
+            }
+            if (password < 4) {
+                error_message = "Password must have at last 4 characters!";
+                $("#result").html(error_message);
+                button.prop('disabled', false);
+                return false;
+            }
+            //Send
+            $.ajax({
+                type: "POST",
+                url: 'https://bnbgain.live/ajax_auth',
+                data: {
+                    username: username_val,
+                    password: password_val,
+                    reference_user_id: reference_user_id
+                },
+                success: function(authresult) {
+                    if (authresult === 'success') {
+                        success_message = "Redirecting to your account...";
+                        $("#result").html(success_message);
+                        return window.location.href = '/';
+                        //return true;
+                    } else {
+                        $("#result").html(authresult);
+                        button.prop('disabled', false);
+                        return false;
+                    }
+                },
+                error: function() {
+                    alert('Oops');
+                }
+            });
+        } else {
+            error_message = "All fields are required!";
+            $("#result").text(error_message);
+            return false;
+        }
+    }
+    //Forgot password
+    function forgotPassword() {
+        let identity_val = $('#forgotPass input[id="identity"]').val();
+        let resultMessage = $('#forgotPassResult');
+        let btnSend = $('#fpSend');
+
+        btnSend.prop('disabled', 'disabled');
+        if (identity_val.length > 4) {
+            //Send
+            $.ajax({
+                type: "POST",
+                url: 'https://bnbgain.live/ajax_auth/recoverpassword',
+                data: {
+                    username: identity_val
+                },
+                success: function(forgotresult) {
+                    console.log(forgotresult);
+                    if (forgotresult === 'success') {
+                        resultMessage.html('<div class="alert alert-success">Email sent successfully!</div>');
+                    } else {
+                        resultMessage.html('<div class="alert alert-danger">' + forgotresult + '</div>');
+                        btnSend.prop('disabled', false);
+                    }
+                },
+                error: function() {
+                    alert('Oops');
+                    btnSend.prop('disabled', false);
+                }
+            });
+        } else {
+            resultMessage.html('<div class="alert alert-danger">Username Required!</div>');
+            btnSend.prop('disabled', false);
+        }
+    }
+</script>
+</body>
+
+</html>
